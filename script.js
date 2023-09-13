@@ -8,7 +8,9 @@ const images = document.querySelectorAll(".carousel-image");
 
 const totalImages = Object.keys(images).length;
 
-const imageWidth = 450;
+
+const imageWidth = images[0].getBoundingClientRect().width + 40;
+// const imageWidth = 450;
 console.log("getbounding1", images[1].getBoundingClientRect());
 
 leftArrow.addEventListener("click", () => {
@@ -45,7 +47,7 @@ rightArrow.addEventListener("click", () => {
 
 
 const navigators = document.querySelectorAll(".navigators div");
-const carouselNav = document.querySelector(".section1");
+const carouselNav = document.querySelector(".section1-container");
 
 navigators.forEach((navigator, index) => {
   navigator.addEventListener("click", () => {
@@ -55,4 +57,26 @@ navigators.forEach((navigator, index) => {
     navigator.classList.add("active");
     carouselNav.style.transform = `translateX(-${window.innerWidth* index}px)`;
   });
+});
+
+
+
+const ham = document.querySelectorAll(".ham")[0];
+const icons = document.querySelectorAll(".ham i");
+const hamMenu = document.querySelectorAll(".ham-menu")[0];
+const body = document.querySelector("body");
+
+ham.addEventListener("click", () => {
+  hamMenu.classList.toggle("ham-active");
+  
+  if(body.style.overflowY === "hidden"){
+    body.style.overflowY = "scroll";
+  }else{
+    body.style.overflowY = "hidden";
+  }
+
+  icons.forEach((icon) => {
+    icon.classList.toggle("active");
+  });
+  
 });

@@ -10,7 +10,21 @@
 
 <body>
     <div id="main">
+      <div class="ham-menu">
+          <div class="ham-menu-content">
+            <p><a href="">Shop Now</a></p>
+            <p><a href="">Health Experts</a></p>
+            <p><a href="">Naked Way ></a></p>
+            <p><a href="">Näck Journals ></a></p>
+            <p id="about-us">About Us</p>
+          </div>
+      </div>
+
       <nav>
+        <div class="ham">
+          <i class="fa-solid fa-bars active"></i>
+          <i class="fas fa-times "></i>
+        </div>
 
         <div id="nav1">
           <p><a href="">Shop Now</a></p>
@@ -24,44 +38,46 @@
         </div>
 
         <div id="nav2">
-          <p>About Us</p>
-          <p><i class="fa-solid fa-user"></i></p>
+          <p id="about-us">About Us</p>
+          <p id="profile-icon"><i class="fa-solid fa-user"></i></p>
           <p><i class="fa-solid fa-cart-shopping"></i></p>
         </div>
 
       </nav>
 
       <div class="section1">
+        <div class="section1-container">
+  
+          <div class="card card1">
+            <div class="card-content">
+              <h1>Stronger Than The Summer Sun!</h1>
+              <p>Protect your skin from the harmful uv rays this summer with nature's strongest- Astaxanthin</p>
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="card-content">
+              <h1>Beyond The Yoga Mat</h1>
+              <p>Yoga practioners and trainers share the benefits of yoga on and off the mat</p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+          <div class="card card3">
+            <div class="card-content">
+              <p>Boost performance and hydration with a unique blend of full-spectrum Essential Amino Acids and electrolytes
+              </p>
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+        </div>
 
-        <div class="card card1">
-          <div class="card-content">
-            <h1>Stronger Than The Summer Sun!</h1>
-            <p>Protect your skin from the harmful uv rays this summer with nature's strongest- Astaxanthin</p>
-            <button>SHOP NOW</button>
-          </div>
-        </div>
-        <div class="card card2">
-          <div class="card-content">
-            <h1>Beyond The Yoga Mat</h1>
-            <p>Yoga practioners and trainers share the benefits of yoga on and off the mat</p>
-            <button>READ MORE</button>
-          </div>
-        </div>
-        <div class="card card3">
-          <div class="card-content">
-            <p>Boost performance and hydration with a unique blend of full-spectrum Essential Amino Acids and electrolytes
-            </p>
-            <button>SHOP NOW</button>
-          </div>
+        <div class="navigators">
+          <div class="active"></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
-
-      <div class="navigators">
-        <div class="active"></div>
-        <div></div>
-        <div></div>
-        </div>
-
+      
       <div class="section2">
         <div class="title">
           <p>HONEST. CLEAN. NATURAL.</p>
@@ -84,11 +100,11 @@
       </div>
 
       <div class="section3">
-        <div class="screen">
+        <div class="screen screen-rev">
             <div class="screen-content">
                 <p>EAA+ELECTROLYTES</p>
                 <h1>Essential Fuel With Hydrating Electrolytes</h1>
-                <p>A potent blend of EAAs with 3.5g leucine per serving, and highly bioavailable electrolytes in pocket-sized sachets - convenient and effective fuel to maximise your performance and hydration.</p>
+                <p class="rmv">A potent blend of EAAs with 3.5g leucine per serving, and highly bioavailable electrolytes in pocket-sized sachets - convenient and effective fuel to maximise your performance and hydration.</p>
                 <button>READ MORE</button>
             </div>
             <div class="image">
@@ -102,15 +118,15 @@
             <div class="screen-content">
                 <p>WHEY PROTEIN</p>
                 <h1>Developed By Sports Nutrition Experts</h1>
-                <p>Näck's Whey Protein is expertly formulated to fuel your workouts, boost muscle growth, enhance recovery and support weight management.</p>
+                <p class="rmv">Näck's Whey Protein is expertly formulated to fuel your workouts, boost muscle growth, enhance recovery and support weight management.</p>
                 <button>READ MORE</button>
             </div>
         </div>
-        <div class="screen">
+        <div class="screen screen-rev">
             <div class="screen-content">
                 <p>PLANT PROTEIN POWDER</p>
                 <h1>Perfectly Balanced Amino Acids</h1>
-                <p>Our 100% plant based powder is formulated to fuel your body with pure protein. By blending naturally sourced yellow peas with whole grain rice, this formula provides a complete essential amino acid profile.</p>
+                <p class="rmv">Our 100% plant based powder is formulated to fuel your body with pure protein. By blending naturally sourced yellow peas with whole grain rice, this formula provides a complete essential amino acid profile.</p>
                 <button>READ MORE</button>
             </div>
             <div class="image">
@@ -124,11 +140,11 @@
             <div class="screen-content">
                 <p>IMMUNITY BOOST</p>
                 <h1>Nature's Strongest Antioxidant</h1>
-                <p>Boost your immune system with nature’s most powerful antioxidant, Astaxanthin. Its unique and strong cellular protection capacity allows it to protect each cell against free radicals and oxidative stress.</p>
+                <p class="rmv">Boost your immune system with nature’s most powerful antioxidant, Astaxanthin. Its unique and strong cellular protection capacity allows it to protect each cell against free radicals and oxidative stress.</p>
                 <button>READ MORE</button>
             </div>
         </div>
-        <div class="screen">
+        <div class="screen screen-rev">
             <div class="screen-content">
                 <p>HEALTH COACHES</p>
                 <h1>Meet Our Experts</h1>
@@ -152,34 +168,36 @@
             <h1>The Näck Journal</h1>
         </div>
 
-        <div class="journal">
-            <div class="card">
-                <div class="img">
-                    <img src="https://nack.life/cdn/shop/articles/desktopcover_720x.jpg?v=1690803407" alt="">
-                </div>
-                <p><span>ATHLETES</span><span> COMMUNITY </span> <span>RUNNING</span></p>
-                <h2>The Starting Line: Running Tips For Beginners</h2>
-                <p>Running is more than just putting one foot in front of the other; it's a journey of self-discovery, endurance, and empowerment. From the brisk morning jogs of beginners to the...</p>
-                <button>READ MORE</button>
-            </div>
-            <div class="card">
-                <div class="img">
-                    <img src="https://nack.life/cdn/shop/articles/yoga_day_journal-desktop_720x.jpg?v=1687346234" alt="">
-                </div>
-                <p><span>ATHLETES</span><span> COMMUNITY </span> <span>RUNNING</span></p>
-                <h2>The Starting Line: Running Tips For Beginners</h2>
-                <p>Running is more than just putting one foot in front of the other; it's a journey of self-discovery, endurance, and empowerment. From the brisk morning jogs of beginners to the...</p>
-                <button>READ MORE</button>
-            </div>
-            <div class="card">
-                <div class="img">
-                    <img src="https://nack.life/cdn/shop/articles/Passion-for-Progress-Desktop_720x.jpg?v=1685529026" alt="">
-                </div>
-                <p><span>ATHLETES</span><span> COMMUNITY </span> <span>RUNNING</span></p>
-                <h2>The Starting Line: Running Tips For Beginners</h2>
-                <p>Running is more than just putting one foot in front of the other; it's a journey of self-discovery, endurance, and empowerment. From the brisk morning jogs of beginners to the...</p>
-                <button>READ MORE</button>
-            </div>
+        <div class="journal-container">
+          <div class="journal">
+              <div class="card">
+                  <div class="img">
+                      <img src="images/section5-1.webp" alt="">
+                  </div>
+                  <p><span>ATHLETES</span><span> COMMUNITY </span> <span>RUNNING</span></p>
+                  <h2>The Starting Line: Running Tips For Beginners</h2>
+                  <p>Running is more than just putting one foot in front of the other; it's a journey of self-discovery, endurance, and empowerment. From the brisk morning jogs of beginners to the...</p>
+                  <button>READ MORE</button>
+              </div>
+              <div class="card">
+                  <div class="img">
+                      <img src="images/section5-2.webp" alt="">
+                  </div>
+                  <p><span>ATHLETES</span><span> COMMUNITY </span> <span>RUNNING</span></p>
+                  <h2>The Starting Line: Running Tips For Beginners</h2>
+                  <p>Running is more than just putting one foot in front of the other; it's a journey of self-discovery, endurance, and empowerment. From the brisk morning jogs of beginners to the...</p>
+                  <button>READ MORE</button>
+              </div>
+              <div class="card">
+                  <div class="img">
+                      <img src="images/section5-3.webp" alt="">
+                  </div>
+                  <p><span>ATHLETES</span><span> COMMUNITY </span> <span>RUNNING</span></p>
+                  <h2>The Starting Line: Running Tips For Beginners</h2>
+                  <p>Running is more than just putting one foot in front of the other; it's a journey of self-discovery, endurance, and empowerment. From the brisk morning jogs of beginners to the...</p>
+                  <button>READ MORE</button>
+              </div>
+          </div>
         </div>
       </div>
 
