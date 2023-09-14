@@ -31,17 +31,53 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    color: #fff;
     padding: 0px 30px 0px;
     position: fixed;
     font-size: 0.8rem;
     font-weight: 500;
-    z-index: 100;
+    z-index: 1000;
+    transition: background-color 0.6s ease;
+}
+
+nav.nav-scrolled{
+	background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .ham{
   display: none;
 }
+
+nav .dropdown-parent{
+  position: relative;
+}
+
+nav .dropdown{
+  width: 320px;
+  background-color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  border: 1px solid #0000003d;
+  color: black;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 0.7rem;
+  display: none;
+}
+
+nav .dropdown-1{
+  left: 17%;
+}
+
+nav .show-dropdown{
+  display: flex;
+}
+
 
 nav p:hover{
     cursor: pointer;
@@ -315,7 +351,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 0px 150px;
 }
 
@@ -337,7 +373,7 @@ span {
 /* section5 */
 .section5{
   width: 100%;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 0px 100px;
 }
 
@@ -357,7 +393,7 @@ span {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .journal .card{
@@ -452,16 +488,17 @@ span {
   margin: 5px;
 }
 
-.section6 .subsec-links span{
-  text-decoration: underline;
-  cursor: pointer;
-  margin-right: 10px;
-  font-size: 0.8rem;
-}
-
 .section6 .subsec-links{
 	display: block;
 	text-align: center;
+	line-height: 30px;
+}
+
+.section6 .subsec-links span{
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 0.8rem;
 }
 
 .section6 .subsec-email{
@@ -510,24 +547,23 @@ footer{
 	width: 0%;
 	height: 100vh;
 	background-color: #fff;
-	position: absolute;
-	top: 70px;
+	position: fixed;
+	top: 0vh;  
 	left: 0;
-	z-index: 999;
+	z-index: 1001;
 	overflow: hidden;
 	transition: width 0.3s ease-in-out;
 }
 
+.ham-menu>p{
+  height: 70px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
 .ham-active{
 	width: 90%;
-}
-
-.ham i{
-	display: none;
-}
-
-.ham .active{
-	display: block;
 }
 
 .ham-menu-content{
@@ -650,6 +686,10 @@ footer{
 		text-align: center;
 	}
 
+  .section4{
+		padding: 0px 20px;
+	}
+
 	.section5{
 		padding: 0 30px;
 	}
@@ -657,4 +697,9 @@ footer{
 	nav #nav2{
 		gap: 20px;
 	}
+
+  footer{
+    font-size: 1rem;
+    height: 150px;
+  }
 }

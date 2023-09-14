@@ -1,13 +1,15 @@
 
 # Nack Clone
 
-Clone of a Natural Nutrition and Supplement company's website named Nack.
+Clone of a Natural Nutrition and Supplement company's website named Nack. This project was built using Html, Css, and Javascript. Did not use any frameworks or libraries.
 
 
 ## Features
 
 - Cross platform
-- Carousel with Navigation
 - Infinite wrapped Carousel with navigation buttons
 - Micro transitions and effects
+- Fully responsive
+- Mobile friendly
+
 
